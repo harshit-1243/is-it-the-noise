@@ -1,0 +1,211 @@
+[    0.0s] Audit: {'rows': 768, 'columns': 9, 'duplicate_rows': 0, 'null_values': 0, 'class_counts': {'0': 500, '1': 268}, 'positive_rate': 0.349, 'zero_coded_missing': {'Glucose': 5, 'BloodPressure': 35, 'SkinThickness': 227, 'Insulin': 374, 'BMI': 11}, 'zero_coded_missing_pct': {'Glucose': 0.7, 'BloodPressure': 4.6, 'SkinThickness': 29.6, 'Insulin': 48.7, 'BMI': 1.4}}
+[    2.7s] DP-SGD accounting (n=192): q=0.1667, steps=180, delta=1e-05
+[    2.7s]   eps= 0.5  sigma=17.280  achieved eps=0.500
+[    2.7s]   eps= 1.0  sigma=9.195  achieved eps=1.000
+[    2.7s]   eps= 2.0  sigma=4.972  achieved eps=2.000
+[    2.7s]   eps= 4.0  sigma=2.785  achieved eps=4.000
+[    2.7s]   eps= 8.0  sigma=1.672  achieved eps=8.000
+[    2.7s] --- seed 0
+[    3.0s]   LogReg             acc=0.755 f1=0.598 gap=+0.036 lossAUC=0.526 shadowAUC=0.529
+[    7.2s]   RandomForest       acc=0.729 f1=0.581 gap=+0.271 lossAUC=0.799 shadowAUC=0.833
+[   12.0s]   MLP                acc=0.667 f1=0.522 gap=+0.328 lossAUC=0.652 shadowAUC=0.724
+[   16.6s]   MLP-L2             acc=0.724 f1=0.583 gap=+0.172 lossAUC=0.604 shadowAUC=0.608
+[   17.1s]   MLP-matched        acc=0.719 f1=0.550 gap=+0.172 lossAUC=0.609 shadowAUC=0.634
+[   17.6s]   DP-MLP clip-only   acc=0.734 f1=0.579 gap=+0.083 lossAUC=0.561 shadowAUC=0.587
+[   18.0s]   DP-MLP eps=0.5     acc=0.630 f1=0.458 gap=+0.036 lossAUC=0.505 shadowAUC=0.532
+[   18.6s]   DP-MLP eps=1       acc=0.651 f1=0.437 gap=+0.073 lossAUC=0.506 shadowAUC=0.507
+[   19.0s]   DP-MLP eps=2       acc=0.698 f1=0.508 gap=+0.062 lossAUC=0.505 shadowAUC=0.527
+[   19.5s]   DP-MLP eps=4       acc=0.734 f1=0.579 gap=+0.062 lossAUC=0.522 shadowAUC=0.452
+[   20.0s]   DP-MLP eps=8       acc=0.760 f1=0.617 gap=+0.026 lossAUC=0.539 shadowAUC=0.505
+[   20.3s]   DP-LR eps=0.5      acc=0.693 f1=0.619 gap=+0.068 lossAUC=0.544 shadowAUC=0.471
+[   20.6s]   DP-LR eps=1        acc=0.714 f1=0.615 gap=+0.078 lossAUC=0.538 shadowAUC=0.479
+[   20.9s]   DP-LR eps=2        acc=0.724 f1=0.613 gap=+0.052 lossAUC=0.532 shadowAUC=0.514
+[   21.3s]   DP-LR eps=4        acc=0.734 f1=0.622 gap=+0.042 lossAUC=0.531 shadowAUC=0.514
+[   21.7s]   DP-LR eps=8        acc=0.745 f1=0.626 gap=+0.042 lossAUC=0.528 shadowAUC=0.497
+[   21.7s] --- seed 1
+[   21.9s]   LogReg             acc=0.771 f1=0.600 gap=+0.036 lossAUC=0.492 shadowAUC=0.523
+[   26.1s]   RandomForest       acc=0.781 f1=0.638 gap=+0.219 lossAUC=0.737 shadowAUC=0.786
+[   31.1s]   MLP                acc=0.703 f1=0.529 gap=+0.297 lossAUC=0.601 shadowAUC=0.755
+[   36.1s]   MLP-L2             acc=0.745 f1=0.542 gap=+0.141 lossAUC=0.550 shadowAUC=0.615
+[   36.5s]   MLP-matched        acc=0.714 f1=0.476 gap=+0.188 lossAUC=0.560 shadowAUC=0.605
+[   37.0s]   DP-MLP clip-only   acc=0.750 f1=0.600 gap=+0.099 lossAUC=0.516 shadowAUC=0.531
+[   37.4s]   DP-MLP eps=0.5     acc=0.464 f1=0.368 gap=+0.031 lossAUC=0.529 shadowAUC=0.482
+[   37.8s]   DP-MLP eps=1       acc=0.547 f1=0.356 gap=+0.031 lossAUC=0.535 shadowAUC=0.507
+[   38.4s]   DP-MLP eps=2       acc=0.635 f1=0.417 gap=+0.073 lossAUC=0.533 shadowAUC=0.540
+[   38.9s]   DP-MLP eps=4       acc=0.750 f1=0.586 gap=+0.036 lossAUC=0.523 shadowAUC=0.553
+[   39.5s]   DP-MLP eps=8       acc=0.766 f1=0.609 gap=+0.062 lossAUC=0.513 shadowAUC=0.551
+[   39.9s]   DP-LR eps=0.5      acc=0.703 f1=0.632 gap=+0.005 lossAUC=0.506 shadowAUC=0.470
+[   40.2s]   DP-LR eps=1        acc=0.760 f1=0.662 gap=-0.036 lossAUC=0.503 shadowAUC=0.528
+[   40.6s]   DP-LR eps=2        acc=0.766 f1=0.646 gap=-0.010 lossAUC=0.499 shadowAUC=0.464
+[   40.9s]   DP-LR eps=4        acc=0.760 f1=0.623 gap=+0.026 lossAUC=0.497 shadowAUC=0.486
+[   41.2s]   DP-LR eps=8        acc=0.771 f1=0.627 gap=+0.010 lossAUC=0.498 shadowAUC=0.511
+[   41.2s] --- seed 2
+[   41.6s]   LogReg             acc=0.771 f1=0.651 gap=-0.010 lossAUC=0.499 shadowAUC=0.422
+[   46.0s]   RandomForest       acc=0.755 f1=0.636 gap=+0.245 lossAUC=0.779 shadowAUC=0.821
+[   51.2s]   MLP                acc=0.667 f1=0.492 gap=+0.333 lossAUC=0.629 shadowAUC=0.704
+[   56.2s]   MLP-L2             acc=0.734 f1=0.579 gap=+0.135 lossAUC=0.557 shadowAUC=0.540
+[   56.7s]   MLP-matched        acc=0.703 f1=0.551 gap=+0.146 lossAUC=0.578 shadowAUC=0.594
+[   57.1s]   DP-MLP clip-only   acc=0.750 f1=0.600 gap=+0.057 lossAUC=0.540 shadowAUC=0.553
+[   57.5s]   DP-MLP eps=0.5     acc=0.557 f1=0.414 gap=+0.052 lossAUC=0.526 shadowAUC=0.504
+[   57.9s]   DP-MLP eps=1       acc=0.609 f1=0.476 gap=+0.042 lossAUC=0.530 shadowAUC=0.531
+[   58.6s]   DP-MLP eps=2       acc=0.693 f1=0.543 gap=+0.026 lossAUC=0.517 shadowAUC=0.503
+[   59.2s]   DP-MLP eps=4       acc=0.755 f1=0.624 gap=+0.016 lossAUC=0.508 shadowAUC=0.535
+[   59.7s]   DP-MLP eps=8       acc=0.766 f1=0.634 gap=+0.016 lossAUC=0.510 shadowAUC=0.545
+[   60.0s]   DP-LR eps=0.5      acc=0.724 f1=0.624 gap=+0.005 lossAUC=0.504 shadowAUC=0.458
+[   60.3s]   DP-LR eps=1        acc=0.729 f1=0.629 gap=+0.021 lossAUC=0.505 shadowAUC=0.469
+[   60.5s]   DP-LR eps=2        acc=0.724 f1=0.613 gap=+0.052 lossAUC=0.504 shadowAUC=0.454
+[   60.8s]   DP-LR eps=4        acc=0.734 f1=0.622 gap=+0.026 lossAUC=0.503 shadowAUC=0.478
+[   61.2s]   DP-LR eps=8        acc=0.745 f1=0.626 gap=+0.010 lossAUC=0.503 shadowAUC=0.503
+[   61.2s] --- seed 3
+[   61.4s]   LogReg             acc=0.734 f1=0.592 gap=+0.031 lossAUC=0.493 shadowAUC=0.462
+[   65.8s]   RandomForest       acc=0.771 f1=0.639 gap=+0.229 lossAUC=0.736 shadowAUC=0.796
+[   70.6s]   MLP                acc=0.693 f1=0.556 gap=+0.302 lossAUC=0.605 shadowAUC=0.746
+[   75.2s]   MLP-L2             acc=0.724 f1=0.589 gap=+0.188 lossAUC=0.564 shadowAUC=0.625
+[   75.5s]   MLP-matched        acc=0.724 f1=0.555 gap=+0.161 lossAUC=0.569 shadowAUC=0.603
+[   76.0s]   DP-MLP clip-only   acc=0.740 f1=0.621 gap=+0.068 lossAUC=0.517 shadowAUC=0.529
+[   76.6s]   DP-MLP eps=0.5     acc=0.635 f1=0.435 gap=+0.005 lossAUC=0.517 shadowAUC=0.487
+[   77.0s]   DP-MLP eps=1       acc=0.630 f1=0.458 gap=+0.047 lossAUC=0.521 shadowAUC=0.513
+[   77.5s]   DP-MLP eps=2       acc=0.682 f1=0.561 gap=+0.083 lossAUC=0.518 shadowAUC=0.556
+[   77.9s]   DP-MLP eps=4       acc=0.708 f1=0.606 gap=+0.073 lossAUC=0.516 shadowAUC=0.554
+[   78.4s]   DP-MLP eps=8       acc=0.714 f1=0.610 gap=+0.089 lossAUC=0.514 shadowAUC=0.526
+[   78.7s]   DP-LR eps=0.5      acc=0.661 f1=0.575 gap=+0.068 lossAUC=0.487 shadowAUC=0.551
+[   79.0s]   DP-LR eps=1        acc=0.688 f1=0.583 gap=+0.062 lossAUC=0.487 shadowAUC=0.555
+[   79.3s]   DP-LR eps=2        acc=0.714 f1=0.610 gap=+0.052 lossAUC=0.489 shadowAUC=0.504
+[   79.6s]   DP-LR eps=4        acc=0.745 f1=0.637 gap=+0.000 lossAUC=0.490 shadowAUC=0.488
+[   79.9s]   DP-LR eps=8        acc=0.734 f1=0.622 gap=+0.031 lossAUC=0.492 shadowAUC=0.544
+[   79.9s] --- seed 4
+[   80.2s]   LogReg             acc=0.760 f1=0.646 gap=+0.052 lossAUC=0.533 shadowAUC=0.510
+[   84.4s]   RandomForest       acc=0.781 f1=0.656 gap=+0.219 lossAUC=0.771 shadowAUC=0.808
+[   89.3s]   MLP                acc=0.740 f1=0.638 gap=+0.260 lossAUC=0.562 shadowAUC=0.680
+[   94.4s]   MLP-L2             acc=0.776 f1=0.681 gap=+0.125 lossAUC=0.546 shadowAUC=0.560
+[   94.9s]   MLP-matched        acc=0.745 f1=0.652 gap=+0.182 lossAUC=0.550 shadowAUC=0.596
+[   95.5s]   DP-MLP clip-only   acc=0.776 f1=0.672 gap=+0.047 lossAUC=0.523 shadowAUC=0.530
+[   95.9s]   DP-MLP eps=0.5     acc=0.682 f1=0.548 gap=+0.052 lossAUC=0.530 shadowAUC=0.514
+[   96.4s]   DP-MLP eps=1       acc=0.693 f1=0.587 gap=+0.062 lossAUC=0.527 shadowAUC=0.537
+[   96.9s]   DP-MLP eps=2       acc=0.714 f1=0.615 gap=+0.068 lossAUC=0.516 shadowAUC=0.572
+[   97.3s]   DP-MLP eps=4       acc=0.729 f1=0.623 gap=+0.083 lossAUC=0.516 shadowAUC=0.534
+[   97.8s]   DP-MLP eps=8       acc=0.760 f1=0.671 gap=+0.042 lossAUC=0.523 shadowAUC=0.508
+[   98.2s]   DP-LR eps=0.5      acc=0.625 f1=0.500 gap=+0.068 lossAUC=0.550 shadowAUC=0.464
+[   98.5s]   DP-LR eps=1        acc=0.708 f1=0.594 gap=+0.036 lossAUC=0.549 shadowAUC=0.499
+[   98.8s]   DP-LR eps=2        acc=0.750 f1=0.642 gap=+0.036 lossAUC=0.544 shadowAUC=0.493
+[   99.1s]   DP-LR eps=4        acc=0.771 f1=0.676 gap=+0.036 lossAUC=0.541 shadowAUC=0.488
+[   99.5s]   DP-LR eps=8        acc=0.760 f1=0.662 gap=+0.026 lossAUC=0.539 shadowAUC=0.495
+[   99.5s] --- seed 5
+[   99.7s]   LogReg             acc=0.740 f1=0.569 gap=+0.036 lossAUC=0.538 shadowAUC=0.523
+[  103.9s]   RandomForest       acc=0.729 f1=0.581 gap=+0.271 lossAUC=0.808 shadowAUC=0.841
+[  109.0s]   MLP                acc=0.667 f1=0.522 gap=+0.333 lossAUC=0.652 shadowAUC=0.701
+[  114.0s]   MLP-L2             acc=0.703 f1=0.565 gap=+0.172 lossAUC=0.600 shadowAUC=0.635
+[  114.4s]   MLP-matched        acc=0.698 f1=0.592 gap=+0.203 lossAUC=0.607 shadowAUC=0.630
+[  114.9s]   DP-MLP clip-only   acc=0.766 f1=0.634 gap=+0.036 lossAUC=0.552 shadowAUC=0.543
+[  115.3s]   DP-MLP eps=0.5     acc=0.484 f1=0.447 gap=+0.000 lossAUC=0.495 shadowAUC=0.547
+[  115.8s]   DP-MLP eps=1       acc=0.547 f1=0.508 gap=-0.010 lossAUC=0.511 shadowAUC=0.473
+[  116.4s]   DP-MLP eps=2       acc=0.604 f1=0.548 gap=+0.042 lossAUC=0.523 shadowAUC=0.513
+[  116.9s]   DP-MLP eps=4       acc=0.672 f1=0.559 gap=+0.073 lossAUC=0.540 shadowAUC=0.558
+[  117.5s]   DP-MLP eps=8       acc=0.740 f1=0.609 gap=+0.068 lossAUC=0.549 shadowAUC=0.519
+[  117.8s]   DP-LR eps=0.5      acc=0.667 f1=0.573 gap=+0.042 lossAUC=0.536 shadowAUC=0.496
+[  118.1s]   DP-LR eps=1        acc=0.693 f1=0.609 gap=+0.068 lossAUC=0.543 shadowAUC=0.467
+[  118.5s]   DP-LR eps=2        acc=0.708 f1=0.606 gap=+0.073 lossAUC=0.544 shadowAUC=0.544
+[  118.7s]   DP-LR eps=4        acc=0.719 f1=0.609 gap=+0.062 lossAUC=0.543 shadowAUC=0.539
+[  119.0s]   DP-LR eps=8        acc=0.719 f1=0.603 gap=+0.068 lossAUC=0.543 shadowAUC=0.553
+[  119.0s] --- seed 6
+[  119.3s]   LogReg             acc=0.760 f1=0.623 gap=-0.036 lossAUC=0.468 shadowAUC=0.497
+[  123.5s]   RandomForest       acc=0.755 f1=0.605 gap=+0.245 lossAUC=0.796 shadowAUC=0.818
+[  128.2s]   MLP                acc=0.703 f1=0.578 gap=+0.286 lossAUC=0.607 shadowAUC=0.719
+[  132.8s]   MLP-L2             acc=0.781 f1=0.650 gap=+0.083 lossAUC=0.539 shadowAUC=0.540
+[  133.3s]   MLP-matched        acc=0.745 f1=0.566 gap=+0.141 lossAUC=0.560 shadowAUC=0.605
+[  133.8s]   DP-MLP clip-only   acc=0.786 f1=0.650 gap=-0.005 lossAUC=0.487 shadowAUC=0.456
+[  134.2s]   DP-MLP eps=0.5     acc=0.740 f1=0.609 gap=-0.031 lossAUC=0.482 shadowAUC=0.486
+[  134.6s]   DP-MLP eps=1       acc=0.703 f1=0.612 gap=-0.005 lossAUC=0.486 shadowAUC=0.513
+[  135.1s]   DP-MLP eps=2       acc=0.719 f1=0.603 gap=+0.021 lossAUC=0.486 shadowAUC=0.519
+[  135.6s]   DP-MLP eps=4       acc=0.781 f1=0.650 gap=-0.026 lossAUC=0.491 shadowAUC=0.517
+[  136.2s]   DP-MLP eps=8       acc=0.776 f1=0.650 gap=-0.010 lossAUC=0.484 shadowAUC=0.489
+[  136.5s]   DP-LR eps=0.5      acc=0.729 f1=0.594 gap=-0.052 lossAUC=0.506 shadowAUC=0.424
+[  136.8s]   DP-LR eps=1        acc=0.750 f1=0.613 gap=-0.073 lossAUC=0.499 shadowAUC=0.433
+[  137.1s]   DP-LR eps=2        acc=0.786 f1=0.667 gap=-0.068 lossAUC=0.487 shadowAUC=0.497
+[  137.3s]   DP-LR eps=4        acc=0.797 f1=0.688 gap=-0.073 lossAUC=0.476 shadowAUC=0.467
+[  137.6s]   DP-LR eps=8        acc=0.786 f1=0.667 gap=-0.057 lossAUC=0.472 shadowAUC=0.491
+[  137.6s] --- seed 7
+[  137.8s]   LogReg             acc=0.740 f1=0.554 gap=+0.078 lossAUC=0.563 shadowAUC=0.500
+[  142.0s]   RandomForest       acc=0.755 f1=0.577 gap=+0.245 lossAUC=0.777 shadowAUC=0.816
+[  146.8s]   MLP                acc=0.729 f1=0.574 gap=+0.271 lossAUC=0.622 shadowAUC=0.666
+[  151.7s]   MLP-L2             acc=0.766 f1=0.602 gap=+0.120 lossAUC=0.576 shadowAUC=0.593
+[  152.0s]   MLP-matched        acc=0.729 f1=0.581 gap=+0.188 lossAUC=0.597 shadowAUC=0.626
+[  152.6s]   DP-MLP clip-only   acc=0.734 f1=0.532 gap=+0.125 lossAUC=0.567 shadowAUC=0.505
+[  152.9s]   DP-MLP eps=0.5     acc=0.646 f1=0.393 gap=+0.104 lossAUC=0.564 shadowAUC=0.568
+[  153.4s]   DP-MLP eps=1       acc=0.703 f1=0.467 gap=+0.083 lossAUC=0.580 shadowAUC=0.558
+[  153.9s]   DP-MLP eps=2       acc=0.672 f1=0.422 gap=+0.161 lossAUC=0.567 shadowAUC=0.566
+[  154.4s]   DP-MLP eps=4       acc=0.719 f1=0.491 gap=+0.135 lossAUC=0.558 shadowAUC=0.567
+[  154.8s]   DP-MLP eps=8       acc=0.745 f1=0.550 gap=+0.115 lossAUC=0.556 shadowAUC=0.556
+[  155.1s]   DP-LR eps=0.5      acc=0.682 f1=0.561 gap=+0.016 lossAUC=0.511 shadowAUC=0.463
+[  155.5s]   DP-LR eps=1        acc=0.693 f1=0.550 gap=+0.068 lossAUC=0.534 shadowAUC=0.459
+[  155.8s]   DP-LR eps=2        acc=0.740 f1=0.597 gap=+0.062 lossAUC=0.546 shadowAUC=0.584
+[  156.1s]   DP-LR eps=4        acc=0.760 f1=0.610 gap=+0.047 lossAUC=0.552 shadowAUC=0.520
+[  156.4s]   DP-LR eps=8        acc=0.771 f1=0.600 gap=+0.042 lossAUC=0.553 shadowAUC=0.520
+[  156.4s] --- seed 8
+[  156.7s]   LogReg             acc=0.807 f1=0.661 gap=-0.042 lossAUC=0.488 shadowAUC=0.519
+[  161.0s]   RandomForest       acc=0.776 f1=0.632 gap=+0.224 lossAUC=0.808 shadowAUC=0.817
+[  165.6s]   MLP                acc=0.734 f1=0.605 gap=+0.255 lossAUC=0.585 shadowAUC=0.710
+[  170.2s]   MLP-L2             acc=0.786 f1=0.631 gap=+0.068 lossAUC=0.544 shadowAUC=0.565
+[  170.7s]   MLP-matched        acc=0.729 f1=0.649 gap=+0.099 lossAUC=0.557 shadowAUC=0.613
+[  171.3s]   DP-MLP clip-only   acc=0.745 f1=0.550 gap=+0.068 lossAUC=0.525 shadowAUC=0.541
+[  171.7s]   DP-MLP eps=0.5     acc=0.672 f1=0.422 gap=-0.016 lossAUC=0.491 shadowAUC=0.465
+[  172.2s]   DP-MLP eps=1       acc=0.677 f1=0.426 gap=+0.021 lossAUC=0.511 shadowAUC=0.514
+[  172.7s]   DP-MLP eps=2       acc=0.672 f1=0.462 gap=+0.057 lossAUC=0.530 shadowAUC=0.487
+[  173.2s]   DP-MLP eps=4       acc=0.708 f1=0.509 gap=+0.052 lossAUC=0.527 shadowAUC=0.463
+[  173.7s]   DP-MLP eps=8       acc=0.745 f1=0.581 gap=+0.052 lossAUC=0.521 shadowAUC=0.546
+[  174.0s]   DP-LR eps=0.5      acc=0.682 f1=0.527 gap=+0.005 lossAUC=0.474 shadowAUC=0.480
+[  174.4s]   DP-LR eps=1        acc=0.734 f1=0.617 gap=-0.016 lossAUC=0.476 shadowAUC=0.572
+[  174.7s]   DP-LR eps=2        acc=0.740 f1=0.603 gap=+0.016 lossAUC=0.480 shadowAUC=0.442
+[  175.0s]   DP-LR eps=4        acc=0.745 f1=0.595 gap=+0.000 lossAUC=0.484 shadowAUC=0.499
+[  175.3s]   DP-LR eps=8        acc=0.766 f1=0.615 gap=-0.016 lossAUC=0.485 shadowAUC=0.505
+[  175.3s] --- seed 9
+[  175.6s]   LogReg             acc=0.802 f1=0.667 gap=-0.042 lossAUC=0.453 shadowAUC=0.495
+[  179.8s]   RandomForest       acc=0.802 f1=0.678 gap=+0.198 lossAUC=0.724 shadowAUC=0.803
+[  184.6s]   MLP                acc=0.755 f1=0.624 gap=+0.245 lossAUC=0.535 shadowAUC=0.726
+[  188.8s]   MLP-L2             acc=0.781 f1=0.667 gap=+0.109 lossAUC=0.490 shadowAUC=0.580
+[  189.2s]   MLP-matched        acc=0.771 f1=0.662 gap=+0.135 lossAUC=0.499 shadowAUC=0.609
+[  189.7s]   DP-MLP clip-only   acc=0.781 f1=0.682 gap=+0.026 lossAUC=0.470 shadowAUC=0.559
+[  190.1s]   DP-MLP eps=0.5     acc=0.609 f1=0.324 gap=+0.000 lossAUC=0.499 shadowAUC=0.523
+[  190.6s]   DP-MLP eps=1       acc=0.661 f1=0.454 gap=-0.021 lossAUC=0.502 shadowAUC=0.538
+[  191.0s]   DP-MLP eps=2       acc=0.693 f1=0.520 gap=-0.021 lossAUC=0.474 shadowAUC=0.478
+[  191.4s]   DP-MLP eps=4       acc=0.792 f1=0.697 gap=-0.026 lossAUC=0.467 shadowAUC=0.488
+[  191.9s]   DP-MLP eps=8       acc=0.797 f1=0.707 gap=+0.010 lossAUC=0.466 shadowAUC=0.497
+[  192.1s]   DP-LR eps=0.5      acc=0.781 f1=0.650 gap=-0.052 lossAUC=0.451 shadowAUC=0.505
+[  192.5s]   DP-LR eps=1        acc=0.792 f1=0.667 gap=-0.031 lossAUC=0.450 shadowAUC=0.526
+[  192.9s]   DP-LR eps=2        acc=0.797 f1=0.667 gap=-0.021 lossAUC=0.452 shadowAUC=0.448
+[  193.2s]   DP-LR eps=4        acc=0.797 f1=0.667 gap=-0.026 lossAUC=0.454 shadowAUC=0.501
+[  193.4s]   DP-LR eps=8        acc=0.797 f1=0.667 gap=-0.031 lossAUC=0.454 shadowAUC=0.482
+[  193.5s] 
+[  193.5s] SUMMARY (mean ± 95% CI over seeds)
+[  193.5s]   LogReg             acc=0.764±0.018 f1=0.616 shadowAUC=0.498±0.024 lossAUC=0.505
+[  193.5s]   RandomForest       acc=0.764±0.017 f1=0.622 shadowAUC=0.814±0.012 lossAUC=0.774
+[  193.5s]   MLP                acc=0.706±0.024 f1=0.564 shadowAUC=0.713±0.020 lossAUC=0.605
+[  193.5s]   MLP-L2             acc=0.752±0.021 f1=0.609 shadowAUC=0.586±0.025 lossAUC=0.557
+[  193.5s]   MLP-matched        acc=0.728±0.016 f1=0.583 shadowAUC=0.612±0.010 lossAUC=0.569
+[  193.5s]   DP-MLP clip-only   acc=0.756±0.014 f1=0.612 shadowAUC=0.534±0.025 lossAUC=0.526
+[  193.5s]   DP-MLP eps=0.5     acc=0.612±0.062 f1=0.442 shadowAUC=0.511±0.023 lossAUC=0.514
+[  193.5s]   DP-MLP eps=1       acc=0.642±0.042 f1=0.478 shadowAUC=0.519±0.017 lossAUC=0.521
+[  193.5s]   DP-MLP eps=2       acc=0.678±0.025 f1=0.520 shadowAUC=0.526±0.023 lossAUC=0.517
+[  193.5s]   DP-MLP eps=4       acc=0.735±0.026 f1=0.592 shadowAUC=0.522±0.029 lossAUC=0.517
+[  193.5s]   DP-MLP eps=8       acc=0.757±0.016 f1=0.624 shadowAUC=0.524±0.017 lossAUC=0.518
+[  193.5s]   DP-LR eps=0.5      acc=0.695±0.031 f1=0.586 shadowAUC=0.478±0.024 lossAUC=0.507
+[  193.5s]   DP-LR eps=1        acc=0.726±0.024 f1=0.614 shadowAUC=0.499±0.032 lossAUC=0.508
+[  193.5s]   DP-LR eps=2        acc=0.745±0.022 f1=0.626 shadowAUC=0.495±0.032 lossAUC=0.508
+[  193.5s]   DP-LR eps=4        acc=0.756±0.019 f1=0.635 shadowAUC=0.498±0.015 lossAUC=0.507
+[  193.5s]   DP-LR eps=8        acc=0.759±0.017 f1=0.631 shadowAUC=0.510±0.016 lossAUC=0.507
+[  193.5s] PAIRED TESTS (Wilcoxon signed-rank)
+[  193.5s]   MLP vs MLP-matched [shadow_auc]: 0.713 vs 0.612, p=0.0020
+[  193.5s]   MLP-matched vs DP-MLP clip-only [shadow_auc]: 0.612 vs 0.534, p=0.0020
+[  193.5s]   DP-MLP clip-only vs DP-MLP eps=4 [shadow_auc]: 0.534 vs 0.522, p=0.8457
+[  193.5s]   MLP vs DP-MLP eps=4 [shadow_auc]: 0.713 vs 0.522, p=0.0020
+[  193.5s]   MLP-L2 vs DP-MLP eps=4 [shadow_auc]: 0.586 vs 0.522, p=0.0020
+[  193.5s]   MLP-L2 vs DP-MLP eps=4 [test_acc]: 0.752 vs 0.735, p=0.1953
+[  193.5s]   MLP vs DP-MLP eps=4 [test_acc]: 0.706 vs 0.735, p=0.0840
+[  193.5s]   DP-MLP eps=1 vs DP-LR eps=1 [test_acc]: 0.642 vs 0.726, p=0.0039
+[  193.5s]   DP-MLP eps=4 vs DP-LR eps=4 [test_acc]: 0.735 vs 0.756, p=0.0273
+[  193.5s]   LogReg vs RandomForest [shadow_auc]: 0.498 vs 0.814, p=0.0020
+[  193.5s]   LogReg vs DP-LR eps=4 [test_acc]: 0.764 vs 0.756, p=0.4102
+[  193.5s]   MLP vs MLP-matched [loss_auc]: 0.605 vs 0.569, p=0.0020
+[  193.5s]   MLP-matched vs DP-MLP clip-only [loss_auc]: 0.569 vs 0.526, p=0.0020
+[  193.5s]   DP-MLP clip-only vs DP-MLP eps=4 [loss_auc]: 0.526 vs 0.517, p=0.1055
+[  193.5s] Done.

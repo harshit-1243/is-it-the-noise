@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+data/brfss2015_diabetes_binary.csv.gz
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.fdb_latexmk
+paper/*.fls
+paper/main.pdf

@@ -1,0 +1,144 @@
+[    0.0s] --- seed 0
+[    3.7s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.729 shadowAUC=0.833 lossAUC=0.799
+[    7.6s]   RandomForest k=2   classes=81 min=2 ncp=0.073 acc=0.714 shadowAUC=0.811 lossAUC=0.801
+[   11.7s]   RandomForest k=5   classes=29 min=5 ncp=0.173 acc=0.719 shadowAUC=0.793 lossAUC=0.774
+[   15.8s]   RandomForest k=10  classes=16 min=10 ncp=0.258 acc=0.714 shadowAUC=0.812 lossAUC=0.786
+[   20.3s]   RandomForest k=25  classes=4 min=47 ncp=0.504 acc=0.729 shadowAUC=0.809 lossAUC=0.768
+[   24.5s]   RandomForest k=50  classes=2 min=94 ncp=0.698 acc=0.714 shadowAUC=0.776 lossAUC=0.733
+[   24.7s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.755 shadowAUC=0.529 lossAUC=0.526
+[   25.0s]   LogReg       k=2   classes=81 min=2 ncp=0.073 acc=0.760 shadowAUC=0.511 lossAUC=0.530
+[   25.3s]   LogReg       k=5   classes=29 min=5 ncp=0.173 acc=0.750 shadowAUC=0.535 lossAUC=0.526
+[   25.6s]   LogReg       k=10  classes=16 min=10 ncp=0.258 acc=0.750 shadowAUC=0.516 lossAUC=0.523
+[   25.9s]   LogReg       k=25  classes=4 min=47 ncp=0.504 acc=0.755 shadowAUC=0.495 lossAUC=0.530
+[   26.2s]   LogReg       k=50  classes=2 min=94 ncp=0.698 acc=0.750 shadowAUC=0.573 lossAUC=0.528
+[   26.2s] --- seed 1
+[   29.8s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.781 shadowAUC=0.786 lossAUC=0.737
+[   34.0s]   RandomForest k=2   classes=79 min=2 ncp=0.069 acc=0.781 shadowAUC=0.796 lossAUC=0.739
+[   38.0s]   RandomForest k=5   classes=32 min=5 ncp=0.154 acc=0.766 shadowAUC=0.772 lossAUC=0.733
+[   42.2s]   RandomForest k=10  classes=15 min=10 ncp=0.235 acc=0.760 shadowAUC=0.760 lossAUC=0.730
+[   46.3s]   RandomForest k=25  classes=5 min=25 ncp=0.453 acc=0.745 shadowAUC=0.776 lossAUC=0.727
+[   50.4s]   RandomForest k=50  classes=2 min=91 ncp=0.656 acc=0.750 shadowAUC=0.765 lossAUC=0.719
+[   50.7s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.771 shadowAUC=0.523 lossAUC=0.492
+[   51.0s]   LogReg       k=2   classes=79 min=2 ncp=0.069 acc=0.781 shadowAUC=0.489 lossAUC=0.498
+[   51.3s]   LogReg       k=5   classes=32 min=5 ncp=0.154 acc=0.781 shadowAUC=0.477 lossAUC=0.499
+[   51.6s]   LogReg       k=10  classes=15 min=10 ncp=0.235 acc=0.797 shadowAUC=0.496 lossAUC=0.494
+[   51.9s]   LogReg       k=25  classes=5 min=25 ncp=0.453 acc=0.802 shadowAUC=0.497 lossAUC=0.499
+[   52.2s]   LogReg       k=50  classes=2 min=91 ncp=0.656 acc=0.797 shadowAUC=0.491 lossAUC=0.504
+[   52.2s] --- seed 2
+[   56.1s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.755 shadowAUC=0.821 lossAUC=0.779
+[   60.0s]   RandomForest k=2   classes=80 min=2 ncp=0.063 acc=0.771 shadowAUC=0.811 lossAUC=0.769
+[   64.0s]   RandomForest k=5   classes=30 min=5 ncp=0.156 acc=0.750 shadowAUC=0.819 lossAUC=0.777
+[   67.8s]   RandomForest k=10  classes=16 min=10 ncp=0.214 acc=0.750 shadowAUC=0.800 lossAUC=0.757
+[   71.8s]   RandomForest k=25  classes=5 min=25 ncp=0.434 acc=0.760 shadowAUC=0.811 lossAUC=0.766
+[   76.0s]   RandomForest k=50  classes=2 min=95 ncp=0.664 acc=0.719 shadowAUC=0.807 lossAUC=0.767
+[   76.3s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.771 shadowAUC=0.422 lossAUC=0.499
+[   76.6s]   LogReg       k=2   classes=80 min=2 ncp=0.063 acc=0.750 shadowAUC=0.469 lossAUC=0.507
+[   76.9s]   LogReg       k=5   classes=30 min=5 ncp=0.156 acc=0.760 shadowAUC=0.500 lossAUC=0.503
+[   77.3s]   LogReg       k=10  classes=16 min=10 ncp=0.214 acc=0.755 shadowAUC=0.513 lossAUC=0.506
+[   77.6s]   LogReg       k=25  classes=5 min=25 ncp=0.434 acc=0.750 shadowAUC=0.554 lossAUC=0.515
+[   77.8s]   LogReg       k=50  classes=2 min=95 ncp=0.664 acc=0.760 shadowAUC=0.462 lossAUC=0.502
+[   77.8s] --- seed 3
+[   81.6s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.771 shadowAUC=0.796 lossAUC=0.736
+[   85.8s]   RandomForest k=2   classes=79 min=2 ncp=0.075 acc=0.740 shadowAUC=0.787 lossAUC=0.724
+[   89.7s]   RandomForest k=5   classes=31 min=5 ncp=0.177 acc=0.740 shadowAUC=0.773 lossAUC=0.734
+[   93.4s]   RandomForest k=10  classes=14 min=10 ncp=0.283 acc=0.719 shadowAUC=0.788 lossAUC=0.735
+[   97.6s]   RandomForest k=25  classes=6 min=25 ncp=0.472 acc=0.714 shadowAUC=0.788 lossAUC=0.730
+[  101.8s]   RandomForest k=50  classes=3 min=52 ncp=0.646 acc=0.708 shadowAUC=0.784 lossAUC=0.723
+[  102.0s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.734 shadowAUC=0.462 lossAUC=0.493
+[  102.3s]   LogReg       k=2   classes=79 min=2 ncp=0.075 acc=0.729 shadowAUC=0.495 lossAUC=0.491
+[  102.6s]   LogReg       k=5   classes=31 min=5 ncp=0.177 acc=0.734 shadowAUC=0.505 lossAUC=0.494
+[  102.9s]   LogReg       k=10  classes=14 min=10 ncp=0.283 acc=0.734 shadowAUC=0.470 lossAUC=0.495
+[  103.1s]   LogReg       k=25  classes=6 min=25 ncp=0.472 acc=0.729 shadowAUC=0.536 lossAUC=0.503
+[  103.4s]   LogReg       k=50  classes=3 min=52 ncp=0.646 acc=0.740 shadowAUC=0.518 lossAUC=0.501
+[  103.4s] --- seed 4
+[  107.1s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.781 shadowAUC=0.808 lossAUC=0.771
+[  111.2s]   RandomForest k=2   classes=81 min=2 ncp=0.068 acc=0.771 shadowAUC=0.789 lossAUC=0.755
+[  115.2s]   RandomForest k=5   classes=30 min=5 ncp=0.183 acc=0.750 shadowAUC=0.785 lossAUC=0.742
+[  119.5s]   RandomForest k=10  classes=15 min=10 ncp=0.263 acc=0.755 shadowAUC=0.793 lossAUC=0.748
+[  123.8s]   RandomForest k=25  classes=6 min=25 ncp=0.452 acc=0.760 shadowAUC=0.777 lossAUC=0.758
+[  127.8s]   RandomForest k=50  classes=2 min=93 ncp=0.733 acc=0.740 shadowAUC=0.784 lossAUC=0.752
+[  128.0s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.760 shadowAUC=0.510 lossAUC=0.533
+[  128.3s]   LogReg       k=2   classes=81 min=2 ncp=0.068 acc=0.755 shadowAUC=0.474 lossAUC=0.537
+[  128.6s]   LogReg       k=5   classes=30 min=5 ncp=0.183 acc=0.755 shadowAUC=0.514 lossAUC=0.533
+[  128.9s]   LogReg       k=10  classes=15 min=10 ncp=0.263 acc=0.750 shadowAUC=0.538 lossAUC=0.532
+[  129.2s]   LogReg       k=25  classes=6 min=25 ncp=0.452 acc=0.745 shadowAUC=0.520 lossAUC=0.532
+[  129.5s]   LogReg       k=50  classes=2 min=93 ncp=0.733 acc=0.740 shadowAUC=0.525 lossAUC=0.540
+[  129.5s] --- seed 5
+[  133.6s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.729 shadowAUC=0.841 lossAUC=0.808
+[  137.9s]   RandomForest k=2   classes=80 min=2 ncp=0.068 acc=0.693 shadowAUC=0.855 lossAUC=0.817
+[  142.3s]   RandomForest k=5   classes=31 min=5 ncp=0.186 acc=0.714 shadowAUC=0.821 lossAUC=0.796
+[  146.6s]   RandomForest k=10  classes=16 min=10 ncp=0.274 acc=0.719 shadowAUC=0.822 lossAUC=0.791
+[  151.3s]   RandomForest k=25  classes=5 min=25 ncp=0.472 acc=0.708 shadowAUC=0.807 lossAUC=0.796
+[  155.8s]   RandomForest k=50  classes=2 min=95 ncp=0.731 acc=0.708 shadowAUC=0.800 lossAUC=0.783
+[  156.1s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.740 shadowAUC=0.523 lossAUC=0.538
+[  156.5s]   LogReg       k=2   classes=80 min=2 ncp=0.068 acc=0.703 shadowAUC=0.541 lossAUC=0.545
+[  156.9s]   LogReg       k=5   classes=31 min=5 ncp=0.186 acc=0.714 shadowAUC=0.561 lossAUC=0.534
+[  157.3s]   LogReg       k=10  classes=16 min=10 ncp=0.274 acc=0.724 shadowAUC=0.540 lossAUC=0.535
+[  157.6s]   LogReg       k=25  classes=5 min=25 ncp=0.472 acc=0.708 shadowAUC=0.496 lossAUC=0.535
+[  157.8s]   LogReg       k=50  classes=2 min=95 ncp=0.731 acc=0.708 shadowAUC=0.499 lossAUC=0.535
+[  157.8s] --- seed 6
+[  161.9s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.755 shadowAUC=0.818 lossAUC=0.796
+[  166.4s]   RandomForest k=2   classes=81 min=2 ncp=0.062 acc=0.750 shadowAUC=0.812 lossAUC=0.765
+[  170.9s]   RandomForest k=5   classes=30 min=5 ncp=0.168 acc=0.724 shadowAUC=0.817 lossAUC=0.770
+[  175.6s]   RandomForest k=10  classes=15 min=10 ncp=0.247 acc=0.745 shadowAUC=0.802 lossAUC=0.756
+[  180.4s]   RandomForest k=25  classes=5 min=26 ncp=0.450 acc=0.750 shadowAUC=0.816 lossAUC=0.776
+[  184.9s]   RandomForest k=50  classes=2 min=95 ncp=0.682 acc=0.740 shadowAUC=0.802 lossAUC=0.782
+[  185.2s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.760 shadowAUC=0.497 lossAUC=0.468
+[  185.7s]   LogReg       k=2   classes=81 min=2 ncp=0.062 acc=0.750 shadowAUC=0.486 lossAUC=0.480
+[  186.0s]   LogReg       k=5   classes=30 min=5 ncp=0.168 acc=0.745 shadowAUC=0.514 lossAUC=0.488
+[  186.4s]   LogReg       k=10  classes=15 min=10 ncp=0.247 acc=0.771 shadowAUC=0.521 lossAUC=0.477
+[  186.8s]   LogReg       k=25  classes=5 min=26 ncp=0.450 acc=0.760 shadowAUC=0.502 lossAUC=0.481
+[  187.2s]   LogReg       k=50  classes=2 min=95 ncp=0.682 acc=0.776 shadowAUC=0.452 lossAUC=0.474
+[  187.2s] --- seed 7
+[  191.6s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.755 shadowAUC=0.816 lossAUC=0.777
+[  196.2s]   RandomForest k=2   classes=80 min=2 ncp=0.060 acc=0.755 shadowAUC=0.807 lossAUC=0.792
+[  200.9s]   RandomForest k=5   classes=29 min=5 ncp=0.158 acc=0.771 shadowAUC=0.782 lossAUC=0.762
+[  205.6s]   RandomForest k=10  classes=15 min=10 ncp=0.234 acc=0.755 shadowAUC=0.798 lossAUC=0.756
+[  210.1s]   RandomForest k=25  classes=5 min=25 ncp=0.451 acc=0.714 shadowAUC=0.803 lossAUC=0.747
+[  214.9s]   RandomForest k=50  classes=2 min=95 ncp=0.687 acc=0.750 shadowAUC=0.819 lossAUC=0.770
+[  215.2s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.740 shadowAUC=0.500 lossAUC=0.563
+[  215.6s]   LogReg       k=2   classes=80 min=2 ncp=0.060 acc=0.740 shadowAUC=0.536 lossAUC=0.556
+[  215.9s]   LogReg       k=5   classes=29 min=5 ncp=0.158 acc=0.755 shadowAUC=0.548 lossAUC=0.552
+[  216.2s]   LogReg       k=10  classes=15 min=10 ncp=0.234 acc=0.750 shadowAUC=0.570 lossAUC=0.551
+[  216.5s]   LogReg       k=25  classes=5 min=25 ncp=0.451 acc=0.729 shadowAUC=0.493 lossAUC=0.556
+[  216.9s]   LogReg       k=50  classes=2 min=95 ncp=0.687 acc=0.750 shadowAUC=0.493 lossAUC=0.529
+[  216.9s] --- seed 8
+[  221.0s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.776 shadowAUC=0.817 lossAUC=0.808
+[  225.4s]   RandomForest k=2   classes=78 min=2 ncp=0.067 acc=0.776 shadowAUC=0.783 lossAUC=0.793
+[  229.7s]   RandomForest k=5   classes=31 min=5 ncp=0.151 acc=0.766 shadowAUC=0.788 lossAUC=0.801
+[  234.3s]   RandomForest k=10  classes=16 min=10 ncp=0.231 acc=0.776 shadowAUC=0.787 lossAUC=0.802
+[  238.7s]   RandomForest k=25  classes=5 min=25 ncp=0.428 acc=0.766 shadowAUC=0.808 lossAUC=0.785
+[  242.9s]   RandomForest k=50  classes=3 min=50 ncp=0.567 acc=0.786 shadowAUC=0.789 lossAUC=0.789
+[  243.1s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.807 shadowAUC=0.519 lossAUC=0.488
+[  243.4s]   LogReg       k=2   classes=78 min=2 ncp=0.067 acc=0.786 shadowAUC=0.491 lossAUC=0.490
+[  243.8s]   LogReg       k=5   classes=31 min=5 ncp=0.151 acc=0.797 shadowAUC=0.476 lossAUC=0.487
+[  244.1s]   LogReg       k=10  classes=16 min=10 ncp=0.231 acc=0.802 shadowAUC=0.511 lossAUC=0.484
+[  244.4s]   LogReg       k=25  classes=5 min=25 ncp=0.428 acc=0.781 shadowAUC=0.530 lossAUC=0.489
+[  244.8s]   LogReg       k=50  classes=3 min=50 ncp=0.567 acc=0.771 shadowAUC=0.504 lossAUC=0.489
+[  244.8s] --- seed 9
+[  249.0s]   RandomForest k=1   classes=nan min=nan ncp=0.000 acc=0.802 shadowAUC=0.803 lossAUC=0.724
+[  253.2s]   RandomForest k=2   classes=78 min=2 ncp=0.064 acc=0.766 shadowAUC=0.798 lossAUC=0.721
+[  257.5s]   RandomForest k=5   classes=31 min=5 ncp=0.145 acc=0.755 shadowAUC=0.779 lossAUC=0.712
+[  261.9s]   RandomForest k=10  classes=15 min=10 ncp=0.237 acc=0.781 shadowAUC=0.770 lossAUC=0.714
+[  266.2s]   RandomForest k=25  classes=4 min=44 ncp=0.477 acc=0.750 shadowAUC=0.782 lossAUC=0.726
+[  270.7s]   RandomForest k=50  classes=2 min=93 ncp=0.690 acc=0.760 shadowAUC=0.814 lossAUC=0.747
+[  270.9s]   LogReg       k=1   classes=nan min=nan ncp=0.000 acc=0.802 shadowAUC=0.495 lossAUC=0.453
+[  271.3s]   LogReg       k=2   classes=78 min=2 ncp=0.064 acc=0.786 shadowAUC=0.488 lossAUC=0.457
+[  271.7s]   LogReg       k=5   classes=31 min=5 ncp=0.145 acc=0.776 shadowAUC=0.499 lossAUC=0.457
+[  272.1s]   LogReg       k=10  classes=15 min=10 ncp=0.237 acc=0.766 shadowAUC=0.464 lossAUC=0.460
+[  272.4s]   LogReg       k=25  classes=4 min=44 ncp=0.477 acc=0.786 shadowAUC=0.481 lossAUC=0.450
+[  272.6s]   LogReg       k=50  classes=2 min=93 ncp=0.690 acc=0.781 shadowAUC=0.458 lossAUC=0.449
+[  272.7s] SUMMARY
+[  272.7s]   RandomForest k=1   ncp=0.000 acc=0.764±0.017 shadowAUC=0.814±0.012 min_class=nan
+[  272.7s]   RandomForest k=2   ncp=0.067 acc=0.752±0.021 shadowAUC=0.805±0.015 min_class=2.0
+[  272.7s]   RandomForest k=5   ncp=0.165 acc=0.745±0.015 shadowAUC=0.793±0.014 min_class=5.0
+[  272.7s]   RandomForest k=10  ncp=0.248 acc=0.747±0.017 shadowAUC=0.793±0.013 min_class=10.0
+[  272.7s]   RandomForest k=25  ncp=0.459 acc=0.740±0.016 shadowAUC=0.798±0.011 min_class=29.2
+[  272.7s]   RandomForest k=50  ncp=0.675 acc=0.738±0.018 shadowAUC=0.794±0.012 min_class=85.3
+[  272.7s]   LogReg       k=1   ncp=0.000 acc=0.764±0.018 shadowAUC=0.498±0.024 min_class=nan
+[  272.7s]   LogReg       k=2   ncp=0.067 acc=0.754±0.019 shadowAUC=0.498±0.017 min_class=2.0
+[  272.7s]   LogReg       k=5   ncp=0.165 acc=0.757±0.017 shadowAUC=0.513±0.020 min_class=5.0
+[  272.7s]   LogReg       k=10  ncp=0.248 acc=0.760±0.018 shadowAUC=0.514±0.023 min_class=10.0
+[  272.7s]   LogReg       k=25  ncp=0.459 acc=0.755±0.021 shadowAUC=0.510±0.017 min_class=29.2
+[  272.7s]   LogReg       k=50  ncp=0.675 acc=0.757±0.018 shadowAUC=0.497±0.026 min_class=85.3
+[  272.7s] Done.

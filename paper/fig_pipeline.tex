@@ -1,0 +1,24 @@
+% Fig. 1: where each defence acts, and what the single adversary attacks (TikZ, vector).
+\begin{tikzpicture}[
+  font=\footnotesize, >=stealth,
+  box/.style={draw=black!70, rounded corners=2pt, fill=black!3, align=center, minimum height=9mm, minimum width=21mm, inner sep=2pt},
+  def/.style={fill=blue!7, draw=blue!50!black, rounded corners=1.5pt, inner sep=2pt, align=center, font=\scriptsize},
+  adv/.style={draw=red!60!black, fill=red!5, rounded corners=2pt, align=center, minimum height=9mm, minimum width=22mm, inner sep=2pt},
+  att/.style={->, densely dashed, red!60!black, thick},
+  lab/.style={font=\scriptsize, text=red!55!black, align=center}]
+  \node[box] (pat) at (0,0) {Patients};
+  \node[box] (tab) at (4.7,0) {Hospital table\\(768 records)};
+  \node[box] (tr)  at (9.7,0) {Training\\(192 records)};
+  \node[box] (api) at (13.9,0) {Prediction API\\(confidences)};
+  \node[box] (z)   at (9.7,-2.1) {Released features\\$Z{=}X_sW$};
+  \node[adv] (A)   at (17.9,-1.05) {Adversary\\(black box)};
+  \draw[->, thick] (pat) -- (tab);
+  \draw[->, thick] (tab) -- (tr);
+  \draw[->, thick] (tr) -- (api);
+  \node[def, anchor=south] at ($(pat)!0.5!(tab)+(0,0.62)$) {\textbf{Local DP}\\randomise own record};
+  \node[def, anchor=south] at ($(tab)!0.5!(tr)+(0,0.62)$) {\textbf{$k$-anonymity}\\generalise Age, Preg., BMI};
+  \node[def, anchor=south] at ($(tr)!0.5!(api)+(0,0.62)$) {\textbf{Central DP}\\DP-SGD};
+  \draw[->, thick] (tab.south) |- node[def, pos=0.72, below=3pt] {\textbf{Compressive}\\PCA / DCA / PDCA} (z.west);
+  \draw[att] (A.north) |- node[lab, pos=0.75, above=2pt] {membership:\\loss, shadow, LiRA} (api.east);
+  \draw[att] (A.south) |- node[lab, pos=0.72, below=2pt] {age-group inference, reconstruction, membership of RF on $Z$} (z.east);
+\end{tikzpicture}

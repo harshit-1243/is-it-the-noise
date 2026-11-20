@@ -1,0 +1,111 @@
+[    0.0s] --- seed 0
+[    4.3s]   raw (8-D)      acc=0.755 rocAUC=0.812 | age-inference acc=1.000 (majority 0.635) AUC=1.000 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.833
+[    8.4s]   PCA m=4        acc=0.719 rocAUC=0.793 | age-inference acc=0.911 (majority 0.635) AUC=0.974 | recon R2=0.745 (age 0.792) | RF shadowAUC=0.787
+[   12.5s]   PCA m=3        acc=0.724 rocAUC=0.806 | age-inference acc=0.906 (majority 0.635) AUC=0.974 | recon R2=0.624 (age 0.791) | RF shadowAUC=0.778
+[   16.8s]   PCA m=2        acc=0.703 rocAUC=0.787 | age-inference acc=0.906 (majority 0.635) AUC=0.970 | recon R2=0.476 (age 0.796) | RF shadowAUC=0.755
+[   21.1s]   PCA m=1        acc=0.698 rocAUC=0.786 | age-inference acc=0.740 (majority 0.635) AUC=0.845 | recon R2=0.259 (age 0.385) | RF shadowAUC=0.680
+[   25.7s]   DCA m=1        acc=0.776 rocAUC=0.814 | age-inference acc=0.672 (majority 0.635) AUC=0.759 | recon R2=0.231 (age 0.224) | RF shadowAUC=0.665
+[   30.0s]   PDCA m=1 b=1   acc=0.766 rocAUC=0.791 | age-inference acc=0.635 (majority 0.635) AUC=0.593 | recon R2=0.205 (age 0.022) | RF shadowAUC=0.696
+[   34.2s]   PDCA m=1 b=3   acc=0.745 rocAUC=0.777 | age-inference acc=0.625 (majority 0.635) AUC=0.545 | recon R2=0.197 (age 0.001) | RF shadowAUC=0.721
+[   38.5s]   PDCA m=1 b=10  acc=0.734 rocAUC=0.768 | age-inference acc=0.635 (majority 0.635) AUC=0.523 | recon R2=0.193 (age -0.003) | RF shadowAUC=0.729
+[   38.5s] --- seed 1
+[   42.6s]   raw (8-D)      acc=0.771 rocAUC=0.855 | age-inference acc=0.964 (majority 0.646) AUC=0.996 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.786
+[   46.8s]   PCA m=4        acc=0.771 rocAUC=0.853 | age-inference acc=0.875 (majority 0.646) AUC=0.950 | recon R2=0.723 (age 0.717) | RF shadowAUC=0.744
+[   50.9s]   PCA m=3        acc=0.776 rocAUC=0.843 | age-inference acc=0.875 (majority 0.646) AUC=0.951 | recon R2=0.595 (age 0.718) | RF shadowAUC=0.759
+[   55.5s]   PCA m=2        acc=0.776 rocAUC=0.833 | age-inference acc=0.880 (majority 0.646) AUC=0.949 | recon R2=0.460 (age 0.717) | RF shadowAUC=0.744
+[   59.9s]   PCA m=1        acc=0.771 rocAUC=0.833 | age-inference acc=0.682 (majority 0.646) AUC=0.765 | recon R2=0.262 (age 0.223) | RF shadowAUC=0.729
+[   64.3s]   DCA m=1        acc=0.781 rocAUC=0.853 | age-inference acc=0.703 (majority 0.646) AUC=0.735 | recon R2=0.197 (age 0.174) | RF shadowAUC=0.678
+[   68.6s]   PDCA m=1 b=1   acc=0.771 rocAUC=0.834 | age-inference acc=0.630 (majority 0.646) AUC=0.598 | recon R2=0.177 (age -0.000) | RF shadowAUC=0.685
+[   73.1s]   PDCA m=1 b=3   acc=0.766 rocAUC=0.821 | age-inference acc=0.630 (majority 0.646) AUC=0.551 | recon R2=0.171 (age -0.014) | RF shadowAUC=0.687
+[   77.4s]   PDCA m=1 b=10  acc=0.766 rocAUC=0.817 | age-inference acc=0.620 (majority 0.646) AUC=0.527 | recon R2=0.169 (age -0.015) | RF shadowAUC=0.727
+[   77.4s] --- seed 2
+[   81.9s]   raw (8-D)      acc=0.771 rocAUC=0.830 | age-inference acc=0.974 (majority 0.672) AUC=0.998 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.821
+[   86.0s]   PCA m=4        acc=0.755 rocAUC=0.799 | age-inference acc=0.911 (majority 0.672) AUC=0.967 | recon R2=0.717 (age 0.787) | RF shadowAUC=0.778
+[   90.4s]   PCA m=3        acc=0.740 rocAUC=0.797 | age-inference acc=0.901 (majority 0.672) AUC=0.965 | recon R2=0.589 (age 0.718) | RF shadowAUC=0.830
+[   94.9s]   PCA m=2        acc=0.740 rocAUC=0.809 | age-inference acc=0.901 (majority 0.672) AUC=0.963 | recon R2=0.441 (age 0.721) | RF shadowAUC=0.759
+[   99.1s]   PCA m=1        acc=0.750 rocAUC=0.811 | age-inference acc=0.656 (majority 0.672) AUC=0.727 | recon R2=0.240 (age 0.113) | RF shadowAUC=0.655
+[  103.3s]   DCA m=1        acc=0.766 rocAUC=0.822 | age-inference acc=0.688 (majority 0.672) AUC=0.736 | recon R2=0.187 (age 0.099) | RF shadowAUC=0.692
+[  107.7s]   PDCA m=1 b=1   acc=0.740 rocAUC=0.834 | age-inference acc=0.641 (majority 0.672) AUC=0.586 | recon R2=0.170 (age -0.024) | RF shadowAUC=0.659
+[  112.2s]   PDCA m=1 b=3   acc=0.745 rocAUC=0.831 | age-inference acc=0.661 (majority 0.672) AUC=0.544 | recon R2=0.166 (age -0.026) | RF shadowAUC=0.680
+[  116.6s]   PDCA m=1 b=10  acc=0.734 rocAUC=0.828 | age-inference acc=0.656 (majority 0.672) AUC=0.528 | recon R2=0.164 (age -0.024) | RF shadowAUC=0.709
+[  116.6s] --- seed 3
+[  120.8s]   raw (8-D)      acc=0.734 rocAUC=0.814 | age-inference acc=0.984 (majority 0.672) AUC=0.998 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.796
+[  125.1s]   PCA m=4        acc=0.755 rocAUC=0.799 | age-inference acc=0.906 (majority 0.672) AUC=0.969 | recon R2=0.700 (age 0.739) | RF shadowAUC=0.793
+[  129.2s]   PCA m=3        acc=0.755 rocAUC=0.799 | age-inference acc=0.906 (majority 0.672) AUC=0.969 | recon R2=0.571 (age 0.720) | RF shadowAUC=0.802
+[  132.9s]   PCA m=2        acc=0.740 rocAUC=0.776 | age-inference acc=0.891 (majority 0.672) AUC=0.971 | recon R2=0.431 (age 0.712) | RF shadowAUC=0.786
+[  136.9s]   PCA m=1        acc=0.740 rocAUC=0.776 | age-inference acc=0.781 (majority 0.672) AUC=0.826 | recon R2=0.256 (age 0.299) | RF shadowAUC=0.757
+[  141.3s]   DCA m=1        acc=0.724 rocAUC=0.811 | age-inference acc=0.755 (majority 0.672) AUC=0.742 | recon R2=0.202 (age 0.166) | RF shadowAUC=0.716
+[  145.2s]   PDCA m=1 b=1   acc=0.755 rocAUC=0.792 | age-inference acc=0.672 (majority 0.672) AUC=0.567 | recon R2=0.172 (age 0.004) | RF shadowAUC=0.712
+[  149.5s]   PDCA m=1 b=3   acc=0.734 rocAUC=0.783 | age-inference acc=0.672 (majority 0.672) AUC=0.524 | recon R2=0.163 (age -0.005) | RF shadowAUC=0.710
+[  153.6s]   PDCA m=1 b=10  acc=0.734 rocAUC=0.777 | age-inference acc=0.672 (majority 0.672) AUC=0.506 | recon R2=0.159 (age -0.005) | RF shadowAUC=0.642
+[  153.6s] --- seed 4
+[  157.9s]   raw (8-D)      acc=0.760 rocAUC=0.831 | age-inference acc=0.995 (majority 0.609) AUC=1.000 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.808
+[  162.2s]   PCA m=4        acc=0.724 rocAUC=0.787 | age-inference acc=0.932 (majority 0.609) AUC=0.987 | recon R2=0.727 (age 0.782) | RF shadowAUC=0.780
+[  166.4s]   PCA m=3        acc=0.750 rocAUC=0.794 | age-inference acc=0.943 (majority 0.609) AUC=0.988 | recon R2=0.605 (age 0.772) | RF shadowAUC=0.809
+[  170.6s]   PCA m=2        acc=0.703 rocAUC=0.797 | age-inference acc=0.922 (majority 0.609) AUC=0.983 | recon R2=0.501 (age 0.672) | RF shadowAUC=0.728
+[  174.6s]   PCA m=1        acc=0.703 rocAUC=0.797 | age-inference acc=0.755 (majority 0.609) AUC=0.884 | recon R2=0.321 (age 0.390) | RF shadowAUC=0.728
+[  178.7s]   DCA m=1        acc=0.760 rocAUC=0.830 | age-inference acc=0.740 (majority 0.609) AUC=0.862 | recon R2=0.260 (age 0.365) | RF shadowAUC=0.679
+[  182.7s]   PDCA m=1 b=1   acc=0.781 rocAUC=0.805 | age-inference acc=0.609 (majority 0.609) AUC=0.623 | recon R2=0.198 (age 0.009) | RF shadowAUC=0.683
+[  186.7s]   PDCA m=1 b=3   acc=0.771 rocAUC=0.782 | age-inference acc=0.609 (majority 0.609) AUC=0.459 | recon R2=0.179 (age -0.014) | RF shadowAUC=0.734
+[  190.9s]   PDCA m=1 b=10  acc=0.760 rocAUC=0.772 | age-inference acc=0.609 (majority 0.609) AUC=0.487 | recon R2=0.172 (age -0.014) | RF shadowAUC=0.728
+[  190.9s] --- seed 5
+[  195.1s]   raw (8-D)      acc=0.740 rocAUC=0.779 | age-inference acc=0.984 (majority 0.641) AUC=0.999 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.841
+[  199.1s]   PCA m=4        acc=0.672 rocAUC=0.747 | age-inference acc=0.911 (majority 0.641) AUC=0.969 | recon R2=0.744 (age 0.747) | RF shadowAUC=0.756
+[  203.3s]   PCA m=3        acc=0.693 rocAUC=0.755 | age-inference acc=0.911 (majority 0.641) AUC=0.967 | recon R2=0.645 (age 0.737) | RF shadowAUC=0.776
+[  207.4s]   PCA m=2        acc=0.688 rocAUC=0.738 | age-inference acc=0.896 (majority 0.641) AUC=0.967 | recon R2=0.486 (age 0.736) | RF shadowAUC=0.773
+[  211.4s]   PCA m=1        acc=0.682 rocAUC=0.736 | age-inference acc=0.745 (majority 0.641) AUC=0.854 | recon R2=0.280 (age 0.398) | RF shadowAUC=0.739
+[  215.6s]   DCA m=1        acc=0.740 rocAUC=0.780 | age-inference acc=0.677 (majority 0.641) AUC=0.754 | recon R2=0.211 (age 0.179) | RF shadowAUC=0.722
+[  219.8s]   PDCA m=1 b=1   acc=0.714 rocAUC=0.751 | age-inference acc=0.641 (majority 0.641) AUC=0.590 | recon R2=0.177 (age 0.009) | RF shadowAUC=0.729
+[  223.8s]   PDCA m=1 b=3   acc=0.719 rocAUC=0.739 | age-inference acc=0.641 (majority 0.641) AUC=0.549 | recon R2=0.168 (age -0.003) | RF shadowAUC=0.683
+[  227.8s]   PDCA m=1 b=10  acc=0.719 rocAUC=0.734 | age-inference acc=0.641 (majority 0.641) AUC=0.471 | recon R2=0.164 (age -0.004) | RF shadowAUC=0.708
+[  227.8s] --- seed 6
+[  231.8s]   raw (8-D)      acc=0.760 rocAUC=0.855 | age-inference acc=1.000 (majority 0.589) AUC=1.000 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.818
+[  235.8s]   PCA m=4        acc=0.724 rocAUC=0.804 | age-inference acc=0.906 (majority 0.589) AUC=0.968 | recon R2=0.730 (age 0.784) | RF shadowAUC=0.775
+[  239.8s]   PCA m=3        acc=0.734 rocAUC=0.820 | age-inference acc=0.906 (majority 0.589) AUC=0.968 | recon R2=0.615 (age 0.780) | RF shadowAUC=0.803
+[  243.8s]   PCA m=2        acc=0.703 rocAUC=0.796 | age-inference acc=0.870 (majority 0.589) AUC=0.959 | recon R2=0.454 (age 0.769) | RF shadowAUC=0.740
+[  248.0s]   PCA m=1        acc=0.708 rocAUC=0.803 | age-inference acc=0.703 (majority 0.589) AUC=0.794 | recon R2=0.267 (age 0.311) | RF shadowAUC=0.691
+[  252.1s]   DCA m=1        acc=0.766 rocAUC=0.855 | age-inference acc=0.625 (majority 0.589) AUC=0.715 | recon R2=0.200 (age 0.234) | RF shadowAUC=0.726
+[  256.3s]   PDCA m=1 b=1   acc=0.792 rocAUC=0.862 | age-inference acc=0.589 (majority 0.589) AUC=0.566 | recon R2=0.172 (age 0.019) | RF shadowAUC=0.724
+[  260.4s]   PDCA m=1 b=3   acc=0.781 rocAUC=0.860 | age-inference acc=0.589 (majority 0.589) AUC=0.534 | recon R2=0.166 (age -0.002) | RF shadowAUC=0.664
+[  264.6s]   PDCA m=1 b=10  acc=0.776 rocAUC=0.859 | age-inference acc=0.589 (majority 0.589) AUC=0.521 | recon R2=0.164 (age -0.008) | RF shadowAUC=0.695
+[  264.6s] --- seed 7
+[  269.0s]   raw (8-D)      acc=0.740 rocAUC=0.796 | age-inference acc=0.984 (majority 0.625) AUC=1.000 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.816
+[  273.1s]   PCA m=4        acc=0.745 rocAUC=0.802 | age-inference acc=0.927 (majority 0.625) AUC=0.975 | recon R2=0.722 (age 0.778) | RF shadowAUC=0.795
+[  277.0s]   PCA m=3        acc=0.734 rocAUC=0.810 | age-inference acc=0.927 (majority 0.625) AUC=0.974 | recon R2=0.618 (age 0.774) | RF shadowAUC=0.774
+[  281.1s]   PCA m=2        acc=0.734 rocAUC=0.800 | age-inference acc=0.927 (majority 0.625) AUC=0.965 | recon R2=0.483 (age 0.665) | RF shadowAUC=0.723
+[  285.3s]   PCA m=1        acc=0.714 rocAUC=0.792 | age-inference acc=0.771 (majority 0.625) AUC=0.844 | recon R2=0.292 (age 0.374) | RF shadowAUC=0.727
+[  289.4s]   DCA m=1        acc=0.745 rocAUC=0.800 | age-inference acc=0.708 (majority 0.625) AUC=0.757 | recon R2=0.206 (age 0.158) | RF shadowAUC=0.671
+[  293.5s]   PDCA m=1 b=1   acc=0.740 rocAUC=0.772 | age-inference acc=0.625 (majority 0.625) AUC=0.616 | recon R2=0.165 (age -0.007) | RF shadowAUC=0.707
+[  297.8s]   PDCA m=1 b=3   acc=0.714 rocAUC=0.755 | age-inference acc=0.625 (majority 0.625) AUC=0.437 | recon R2=0.152 (age -0.026) | RF shadowAUC=0.733
+[  302.0s]   PDCA m=1 b=10  acc=0.724 rocAUC=0.746 | age-inference acc=0.625 (majority 0.625) AUC=0.463 | recon R2=0.146 (age -0.027) | RF shadowAUC=0.699
+[  302.0s] --- seed 8
+[  306.3s]   raw (8-D)      acc=0.807 rocAUC=0.840 | age-inference acc=0.979 (majority 0.641) AUC=0.999 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.817
+[  310.6s]   PCA m=4        acc=0.724 rocAUC=0.800 | age-inference acc=0.922 (majority 0.641) AUC=0.971 | recon R2=0.719 (age 0.754) | RF shadowAUC=0.812
+[  314.8s]   PCA m=3        acc=0.703 rocAUC=0.802 | age-inference acc=0.922 (majority 0.641) AUC=0.971 | recon R2=0.604 (age 0.753) | RF shadowAUC=0.801
+[  319.2s]   PCA m=2        acc=0.714 rocAUC=0.793 | age-inference acc=0.922 (majority 0.641) AUC=0.971 | recon R2=0.473 (age 0.748) | RF shadowAUC=0.787
+[  323.4s]   PCA m=1        acc=0.734 rocAUC=0.802 | age-inference acc=0.729 (majority 0.641) AUC=0.818 | recon R2=0.281 (age 0.211) | RF shadowAUC=0.735
+[  327.7s]   DCA m=1        acc=0.786 rocAUC=0.837 | age-inference acc=0.734 (majority 0.641) AUC=0.754 | recon R2=0.192 (age 0.147) | RF shadowAUC=0.710
+[  331.8s]   PDCA m=1 b=1   acc=0.807 rocAUC=0.819 | age-inference acc=0.646 (majority 0.641) AUC=0.573 | recon R2=0.155 (age -0.000) | RF shadowAUC=0.698
+[  335.6s]   PDCA m=1 b=3   acc=0.792 rocAUC=0.811 | age-inference acc=0.641 (majority 0.641) AUC=0.528 | recon R2=0.146 (age -0.002) | RF shadowAUC=0.678
+[  339.8s]   PDCA m=1 b=10  acc=0.786 rocAUC=0.808 | age-inference acc=0.641 (majority 0.641) AUC=0.509 | recon R2=0.143 (age 0.003) | RF shadowAUC=0.687
+[  339.8s] --- seed 9
+[  343.8s]   raw (8-D)      acc=0.802 rocAUC=0.865 | age-inference acc=0.979 (majority 0.646) AUC=0.998 | recon R2=1.000 (age 1.000) | RF shadowAUC=0.804
+[  347.7s]   PCA m=4        acc=0.729 rocAUC=0.837 | age-inference acc=0.870 (majority 0.646) AUC=0.944 | recon R2=0.696 (age 0.752) | RF shadowAUC=0.763
+[  351.9s]   PCA m=3        acc=0.745 rocAUC=0.837 | age-inference acc=0.875 (majority 0.646) AUC=0.940 | recon R2=0.582 (age 0.751) | RF shadowAUC=0.808
+[  356.0s]   PCA m=2        acc=0.724 rocAUC=0.823 | age-inference acc=0.859 (majority 0.646) AUC=0.943 | recon R2=0.438 (age 0.752) | RF shadowAUC=0.723
+[  360.4s]   PCA m=1        acc=0.724 rocAUC=0.823 | age-inference acc=0.719 (majority 0.646) AUC=0.787 | recon R2=0.240 (age 0.301) | RF shadowAUC=0.742
+[  364.3s]   DCA m=1        acc=0.792 rocAUC=0.864 | age-inference acc=0.693 (majority 0.646) AUC=0.699 | recon R2=0.189 (age 0.142) | RF shadowAUC=0.698
+[  368.2s]   PDCA m=1 b=1   acc=0.792 rocAUC=0.844 | age-inference acc=0.625 (majority 0.646) AUC=0.554 | recon R2=0.168 (age 0.006) | RF shadowAUC=0.720
+[  372.1s]   PDCA m=1 b=3   acc=0.781 rocAUC=0.835 | age-inference acc=0.625 (majority 0.646) AUC=0.517 | recon R2=0.163 (age -0.004) | RF shadowAUC=0.713
+[  376.0s]   PDCA m=1 b=10  acc=0.781 rocAUC=0.831 | age-inference acc=0.635 (majority 0.646) AUC=0.502 | recon R2=0.160 (age -0.005) | RF shadowAUC=0.725
+[  376.0s] SUMMARY
+[  376.1s]   raw (8-D)      acc=0.764±0.018 ageAUC=0.999 reconR2=1.000 RFshadowAUC=0.814
+[  376.1s]   PCA m=4        acc=0.732±0.020 ageAUC=0.967 reconR2=0.722 RFshadowAUC=0.778
+[  376.1s]   PCA m=3        acc=0.735±0.017 ageAUC=0.967 reconR2=0.605 RFshadowAUC=0.794
+[  376.1s]   PCA m=2        acc=0.722±0.019 ageAUC=0.964 reconR2=0.465 RFshadowAUC=0.752
+[  376.1s]   PCA m=1        acc=0.722±0.019 ageAUC=0.814 reconR2=0.270 RFshadowAUC=0.718
+[  376.1s]   DCA m=1        acc=0.764±0.016 ageAUC=0.751 reconR2=0.208 RFshadowAUC=0.696
+[  376.1s]   PDCA m=1 b=1   acc=0.766±0.021 ageAUC=0.587 reconR2=0.176 RFshadowAUC=0.701
+[  376.1s]   PDCA m=1 b=3   acc=0.755±0.020 ageAUC=0.519 reconR2=0.167 RFshadowAUC=0.700
+[  376.1s]   PDCA m=1 b=10  acc=0.752±0.018 ageAUC=0.504 reconR2=0.163 RFshadowAUC=0.705
+[  376.1s] Done.

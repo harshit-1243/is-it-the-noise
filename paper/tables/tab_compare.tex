@@ -1,0 +1,21 @@
+\begin{tabular}{@{}llccccl@{}}
+\toprule
+Mechanism & Setting & Acc. & ROC-AUC & Shadow AUC & LiRA TPR@1\% & Formal guarantee \\
+\midrule
+None & Logistic regression & 0.764 & 0.828 & 0.498 & 1.2\% & none \\
+ & Random Forest & 0.764 & 0.814 & 0.814 & 56.2\% & none \\
+\addlinespace[2pt]
+Central DP & DP-SGD LR, $\varepsilon{=}4$ & 0.756 & 0.824 & 0.498 & 1.2\% & $(4,10^{-5})$-DP \\
+ & DP-SGD LR, $\varepsilon{=}1$ & 0.726 & 0.788 & 0.499 & -- & $(1,10^{-5})$-DP \\
+ & DP-SGD MLP, $\varepsilon{=}4$ & 0.735 & 0.785 & 0.522 & 1.2\% & $(4,10^{-5})$-DP \\
+\addlinespace[2pt]
+Local DP & Label only (RR), $\varepsilon{=}4$ & 0.762 & 0.827 & 0.506 & -- & 4-LDP, label \\
+ & All attributes, $\varepsilon{=}16$ & 0.652 & 0.727 & 0.514 & -- & 16-LDP, record \\
+\addlinespace[2pt]
+$k$-anonymity & $k{=}5$ + Random Forest & 0.745 & 0.796 & 0.793 & -- & syntactic \\
+ & $k{=}5$ + LR & 0.757 & 0.820 & 0.513 & -- & syntactic \\
+\addlinespace[2pt]
+Compressive & DCA, $m{=}1$ (RF on $Z$)$^\dagger$ & 0.764 & 0.827 & 0.696 & -- & none (empirical) \\
+ & PDCA, $\beta{=}10$ (RF on $Z$)$^\dagger$ & 0.752 & 0.794 & 0.705 & -- & none (empirical) \\
+\bottomrule
+\end{tabular}

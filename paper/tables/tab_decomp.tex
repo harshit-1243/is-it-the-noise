@@ -1,0 +1,12 @@
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Step added & Shadow AUC & Loss AUC & LiRA AUC \\
+ & {\scriptsize $\Delta$ ($p$, Wilcoxon)} & {\scriptsize $\Delta$ ($p$)} & {\scriptsize $\Delta$ [95\% CI]} \\
+\midrule
+Shorter training (1000$\to$30 epochs) & $-$0.102 (0.002) & $-$0.036 (0.002) & $-$0.127 {\scriptsize[0.118, 0.135]} \\
+Per-record clipping ($C{=}1$) & $-$0.078 (0.002) & $-$0.043 (0.002) & $-$0.049 {\scriptsize[0.040, 0.058]} \\
+Gaussian noise ($\varepsilon{=}4$) & $-$0.011 (0.846) & $-$0.009 (0.105) & $-$0.045 {\scriptsize[0.037, 0.053]} \\
+\midrule
+Total (MLP $\to$ DP-SGD, $\varepsilon{=}4$) & $-$0.191 (0.002) & $-$0.088 & $-$0.221 \\
+\bottomrule
+\end{tabular}

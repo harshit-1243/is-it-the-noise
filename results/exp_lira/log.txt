@@ -1,0 +1,15 @@
+[    1.6s] LiRA: N=768, each model trains on 384, K=64; DP q=0.0833 steps=360
+[    1.7s]   eps=1: sigma=6.531 (achieved 1.000)
+[    1.7s]   eps=4: sigma=2.040 (achieved 4.000)
+[    1.7s]   eps=8: sigma=1.286 (achieved 8.000)
+[    2.2s]   LogReg             AUC=0.530  TPR@1%FPR=0.0124  TPR@0.1%FPR=0.0011  (n=49152)
+[   25.9s]   RandomForest       AUC=0.965  TPR@1%FPR=0.5616  TPR@0.1%FPR=0.1293  (n=49152)
+[   89.0s]   MLP                AUC=0.751  TPR@1%FPR=0.1073  TPR@0.1%FPR=0.0300  (n=49152)
+[  145.8s]   MLP-L2             AUC=0.625  TPR@1%FPR=0.0406  TPR@0.1%FPR=0.0056  (n=49152)
+[  148.3s]   MLP-matched        AUC=0.624  TPR@1%FPR=0.0386  TPR@0.1%FPR=0.0061  (n=49152)
+[  152.2s]   DP-MLP clip-only   AUC=0.575  TPR@1%FPR=0.0203  TPR@0.1%FPR=0.0025  (n=49152)
+[  155.7s]   DP-MLP eps=8       AUC=0.545  TPR@1%FPR=0.0133  TPR@0.1%FPR=0.0009  (n=49152)
+[  159.3s]   DP-MLP eps=4       AUC=0.530  TPR@1%FPR=0.0123  TPR@0.1%FPR=0.0009  (n=49152)
+[  162.9s]   DP-MLP eps=1       AUC=0.507  TPR@1%FPR=0.0100  TPR@0.1%FPR=0.0009  (n=49152)
+[  164.0s]   DP-LR eps=4        AUC=0.520  TPR@1%FPR=0.0118  TPR@0.1%FPR=0.0009  (n=49152)
+[  164.0s] Done.

@@ -1,0 +1,43 @@
+[    0.4s] BRFSS loaded: {'rows': 253680, 'columns': 22, 'positive_rate': 0.13933301797540207, 'duplicates': 24206, 'nulls': 0, 'sha256_uncompressed': '19f367e3e3350768f0c144c5d73ee5b355f67a57eaaa86ca7bd8aec594d8b1d0', 'sha256_matches_published': True}
+[    2.4s] seed 0 n=200    lot=32    LogReg: AUC=0.750  DP-LR : AUC=0.744  DP-LR e=0.5: AUC=0.491  DP-LR e=1: AUC=0.542  DP-LR e=4: AUC=0.680
+[    4.0s] seed 0 n=1000   lot=32    LogReg: AUC=0.794  DP-LR : AUC=0.773  DP-LR e=0.5: AUC=0.595  DP-LR e=1: AUC=0.665  DP-LR e=4: AUC=0.742
+[    5.9s] seed 0 n=5000   lot=100   LogReg: AUC=0.815  DP-LR : AUC=0.791  DP-LR e=0.5: AUC=0.762  DP-LR e=1: AUC=0.780  DP-LR e=4: AUC=0.789
+[    8.2s] seed 0 n=25000  lot=500   LogReg: AUC=0.819  DP-LR : AUC=0.797  DP-LR e=0.5: AUC=0.794  DP-LR e=1: AUC=0.796  DP-LR e=4: AUC=0.797
+[   13.3s] seed 0 n=100000 lot=2000  LogReg: AUC=0.820  DP-LR : AUC=0.797  DP-LR e=0.5: AUC=0.797  DP-LR e=1: AUC=0.797  DP-LR e=4: AUC=0.797
+[   15.1s] seed 1 n=200    lot=32    LogReg: AUC=0.756  DP-LR : AUC=0.726  DP-LR e=0.5: AUC=0.568  DP-LR e=1: AUC=0.609  DP-LR e=4: AUC=0.687
+[   17.0s] seed 1 n=1000   lot=32    LogReg: AUC=0.806  DP-LR : AUC=0.777  DP-LR e=0.5: AUC=0.464  DP-LR e=1: AUC=0.519  DP-LR e=4: AUC=0.695
+[   18.9s] seed 1 n=5000   lot=100   LogReg: AUC=0.819  DP-LR : AUC=0.794  DP-LR e=0.5: AUC=0.754  DP-LR e=1: AUC=0.776  DP-LR e=4: AUC=0.789
+[   21.2s] seed 1 n=25000  lot=500   LogReg: AUC=0.821  DP-LR : AUC=0.797  DP-LR e=0.5: AUC=0.795  DP-LR e=1: AUC=0.797  DP-LR e=4: AUC=0.797
+[   26.2s] seed 1 n=100000 lot=2000  LogReg: AUC=0.822  DP-LR : AUC=0.796  DP-LR e=0.5: AUC=0.796  DP-LR e=1: AUC=0.796  DP-LR e=4: AUC=0.796
+[   28.1s] seed 2 n=200    lot=32    LogReg: AUC=0.723  DP-LR : AUC=0.698  DP-LR e=0.5: AUC=0.475  DP-LR e=1: AUC=0.522  DP-LR e=4: AUC=0.632
+[   29.5s] seed 2 n=1000   lot=32    LogReg: AUC=0.794  DP-LR : AUC=0.753  DP-LR e=0.5: AUC=0.666  DP-LR e=1: AUC=0.691  DP-LR e=4: AUC=0.732
+[   31.2s] seed 2 n=5000   lot=100   LogReg: AUC=0.817  DP-LR : AUC=0.793  DP-LR e=0.5: AUC=0.723  DP-LR e=1: AUC=0.769  DP-LR e=4: AUC=0.788
+[   33.4s] seed 2 n=25000  lot=500   LogReg: AUC=0.819  DP-LR : AUC=0.796  DP-LR e=0.5: AUC=0.793  DP-LR e=1: AUC=0.794  DP-LR e=4: AUC=0.795
+[   38.1s] seed 2 n=100000 lot=2000  LogReg: AUC=0.819  DP-LR : AUC=0.795  DP-LR e=0.5: AUC=0.795  DP-LR e=1: AUC=0.795  DP-LR e=4: AUC=0.795
+[   38.1s] SUMMARY (ROC-AUC mean ± 95% CI)
+[   38.1s]   LogReg (non-private)   eps=inf  n=200    AUC=0.743±0.043 balAcc=0.683
+[   38.1s]   DP-LR clip-only (no noise) eps=inf  n=200    AUC=0.723±0.058 balAcc=0.583
+[   38.1s]   DP-LR                  eps=0.5  n=200    AUC=0.511±0.124 balAcc=0.510
+[   38.1s]   DP-LR                  eps=1.0  n=200    AUC=0.558±0.113 balAcc=0.537
+[   38.1s]   DP-LR                  eps=4.0  n=200    AUC=0.666±0.075 balAcc=0.585
+[   38.1s]   LogReg (non-private)   eps=inf  n=1000   AUC=0.798±0.017 balAcc=0.726
+[   38.1s]   DP-LR clip-only (no noise) eps=inf  n=1000   AUC=0.767±0.032 balAcc=0.631
+[   38.1s]   DP-LR                  eps=0.5  n=1000   AUC=0.575±0.255 balAcc=0.550
+[   38.1s]   DP-LR                  eps=1.0  n=1000   AUC=0.625±0.231 balAcc=0.578
+[   38.1s]   DP-LR                  eps=4.0  n=1000   AUC=0.723±0.061 balAcc=0.612
+[   38.1s]   LogReg (non-private)   eps=inf  n=5000   AUC=0.817±0.005 balAcc=0.743
+[   38.1s]   DP-LR clip-only (no noise) eps=inf  n=5000   AUC=0.793±0.003 balAcc=0.647
+[   38.1s]   DP-LR                  eps=0.5  n=5000   AUC=0.746±0.051 balAcc=0.625
+[   38.1s]   DP-LR                  eps=1.0  n=5000   AUC=0.775±0.014 balAcc=0.637
+[   38.1s]   DP-LR                  eps=4.0  n=5000   AUC=0.788±0.001 balAcc=0.644
+[   38.1s]   LogReg (non-private)   eps=inf  n=25000  AUC=0.820±0.003 balAcc=0.745
+[   38.1s]   DP-LR clip-only (no noise) eps=inf  n=25000  AUC=0.797±0.002 balAcc=0.655
+[   38.1s]   DP-LR                  eps=0.5  n=25000  AUC=0.794±0.003 balAcc=0.655
+[   38.1s]   DP-LR                  eps=1.0  n=25000  AUC=0.796±0.003 balAcc=0.655
+[   38.1s]   DP-LR                  eps=4.0  n=25000  AUC=0.797±0.003 balAcc=0.655
+[   38.1s]   LogReg (non-private)   eps=inf  n=100000 AUC=0.820±0.004 balAcc=0.745
+[   38.1s]   DP-LR clip-only (no noise) eps=inf  n=100000 AUC=0.796±0.003 balAcc=0.646
+[   38.1s]   DP-LR                  eps=0.5  n=100000 AUC=0.796±0.003 balAcc=0.646
+[   38.1s]   DP-LR                  eps=1.0  n=100000 AUC=0.796±0.003 balAcc=0.646
+[   38.1s]   DP-LR                  eps=4.0  n=100000 AUC=0.796±0.003 balAcc=0.646
+[   38.1s] Done.

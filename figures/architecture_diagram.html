@@ -1,0 +1,133 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;background:#fff;font-family:'DejaVu Sans',Arial,sans-serif}
+</style></head><body>
+<svg id="arch" xmlns="http://www.w3.org/2000/svg" width="1640" height="640" viewBox="0 0 1640 640">
+<defs>
+ <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6f6e69"/></marker>
+ <marker id="arO" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c4521f"/></marker>
+</defs>
+<style>
+ text{font-family:'DejaVu Sans',Arial,sans-serif}
+ .t{font-size:19px;font-weight:700;fill:#0b0b0b}
+ .st{font-size:13px;fill:#52514e}
+ .lane{font-size:12.5px;font-weight:700;fill:#52514e;letter-spacing:.06em}
+ .n{font-size:14.5px;font-weight:700;fill:#0b0b0b}
+ .b{font-size:12.5px;fill:#0b0b0b}
+ .q{font-size:12px;fill:#52514e}
+ .box{fill:#fff;stroke:#8a8984;stroke-width:1.3}
+ .c{fill:none;stroke:#6f6e69;stroke-width:1.4}
+ .co{fill:none;stroke:#c4521f;stroke-width:1.5}
+ .tag{font-size:11.5px;font-weight:700;fill:#fff}
+</style>
+<text class="t" x="24" y="34">Where each syllabus module acts in the diabetes-prediction pipeline</text>
+<text class="st" x="24" y="56">Each defence (M2–M5) is evaluated on its own against the same attacks (M1) and the same metrics, so the mechanisms can be compared fairly.</text>
+
+<text class="lane" x="24" y="96">DATA PATH: FROM PATIENT TO PREDICTION API</text>
+
+<!-- 1 data -->
+<g><rect class="box" x="24" y="108" width="196" height="122" rx="8"/>
+<text class="n" x="38" y="134">Patient records</text>
+<text class="b" x="38" y="160">Pima: 768 × 8 clinical</text>
+<text class="b" x="38" y="180">BRFSS 2015: 253,680</text>
+<text class="q" x="38" y="200">× 21 survey indicators</text>
+<text class="q" x="38" y="218">provenance + SHA-256</text></g>
+
+<!-- M3 -->
+<g><rect x="244" y="108" width="196" height="122" rx="8" fill="#1baf7a" fill-opacity=".09" stroke="#1baf7a" stroke-width="1.8"/>
+<rect x="256" y="118" width="34" height="20" rx="4" fill="#138a5f"/><text class="tag" x="273" y="132" text-anchor="middle">M3</text>
+<text class="n" x="298" y="133">Local DP</text>
+<text class="b" x="258" y="160">at the patient, before</text>
+<text class="b" x="258" y="178">data leaves them</text>
+<text class="q" x="258" y="200">randomised response (label)</text>
+<text class="q" x="258" y="218">Laplace (8 features)</text></g>
+
+<!-- hospital -->
+<g><rect class="box" x="464" y="108" width="196" height="122" rx="8"/>
+<text class="n" x="478" y="134">Hospital dataset</text>
+<text class="b" x="478" y="160">audit, zeros → missing</text>
+<text class="b" x="478" y="180">stratified splits ×10</text>
+<text class="q" x="478" y="200">members · non-members</text>
+<text class="q" x="478" y="218">· attacker shadow pool</text></g>
+
+<!-- M4 -->
+<g><rect x="684" y="108" width="196" height="122" rx="8" fill="#eda100" fill-opacity=".10" stroke="#c98500" stroke-width="1.8"/>
+<rect x="696" y="118" width="34" height="20" rx="4" fill="#a86f00"/><text class="tag" x="713" y="132" text-anchor="middle">M4</text>
+<text class="n" x="738" y="133">PPDM</text>
+<text class="b" x="698" y="160">Mondrian k-anonymity</text>
+<text class="b" x="698" y="178">on Age, Pregnancies, BMI</text>
+<text class="q" x="698" y="200">k = 2 … 50, info-loss</text>
+<text class="q" x="698" y="218">(NCP) measured</text></g>
+
+<!-- M5 -->
+<g><rect x="904" y="108" width="196" height="122" rx="8" fill="#6250d6" fill-opacity=".08" stroke="#6250d6" stroke-width="1.8"/>
+<rect x="916" y="118" width="34" height="20" rx="4" fill="#4a3aa7"/><text class="tag" x="933" y="132" text-anchor="middle">M5</text>
+<text class="n" x="958" y="133">Compressive</text>
+<text class="b" x="918" y="160">release Z = projection(X)</text>
+<text class="b" x="918" y="178">PCA m = 1–4, DCA,</text>
+<text class="q" x="918" y="200">privacy-aware DCA hiding</text>
+<text class="q" x="918" y="218">the age-group attribute</text></g>
+
+<!-- M2 -->
+<g><rect x="1124" y="108" width="196" height="122" rx="8" fill="#2a78d6" fill-opacity=".10" stroke="#2a78d6" stroke-width="2"/>
+<rect x="1136" y="118" width="34" height="20" rx="4" fill="#1c5cab"/><text class="tag" x="1153" y="132" text-anchor="middle">M2</text>
+<text class="n" x="1178" y="133">Central DP</text>
+<text class="b" x="1138" y="160">DP-SGD: clip + noise</text>
+<text class="b" x="1138" y="178">MLP and logistic reg.</text>
+<text class="q" x="1138" y="200">RDP accountant, ε 0.5–8</text>
+<text class="q" x="1138" y="218">δ = 10⁻⁵</text></g>
+
+<!-- API -->
+<g><rect class="box" x="1344" y="108" width="272" height="122" rx="8"/>
+<text class="n" x="1358" y="134">Prediction API</text>
+<text class="b" x="1358" y="160">diabetes risk p(y = 1 | x)</text>
+<text class="b" x="1358" y="180">models: LR, RF, MLP,</text>
+<text class="q" x="1358" y="200">DP-MLP, DP-LR, L2 and</text>
+<text class="q" x="1358" y="218">matched-recipe baselines</text></g>
+
+<path class="c" d="M220 169H242" marker-end="url(#ar)"/>
+<path class="c" d="M440 169H462" marker-end="url(#ar)"/>
+<path class="c" d="M660 169H682" marker-end="url(#ar)"/>
+<path class="c" d="M880 169H902" marker-end="url(#ar)"/>
+<path class="c" d="M1100 169H1122" marker-end="url(#ar)"/>
+<path class="c" d="M1320 169H1342" marker-end="url(#ar)"/>
+
+<!-- M1 attacker -->
+<g><rect x="904" y="302" width="712" height="118" rx="8" fill="#eb6834" fill-opacity=".07" stroke="#eb6834" stroke-width="1.8"/>
+<rect x="916" y="312" width="34" height="20" rx="4" fill="#c4521f"/><text class="tag" x="933" y="326" text-anchor="middle">M1</text>
+<text class="n" x="958" y="327">Privacy attacks used as the audit</text><text class="q" x="1262" y="327" style="fill:#c4521f">attacker: query access + same-population data</text>
+<text class="b" x="918" y="356">Loss-threshold MIA (Yeom)</text>
+<text class="b" x="918" y="378">Shadow-model MIA, 8 shadows (Shokri)</text>
+<text class="b" x="918" y="400">LiRA, 64 models, TPR at 0.1% FPR (Carlini)</text>
+<text class="b" x="1262" y="356">Attribute inference: age ≥ 35 from Z</text>
+<text class="b" x="1262" y="378">Reconstruction of X from Z (R²)</text>
+<text class="q" x="1262" y="400">(for the M5 releases)</text></g>
+<path class="co" d="M1480 230V300" marker-end="url(#arO)" marker-start="url(#arO)"/>
+<text class="q" x="1490" y="262" style="fill:#c4521f">queries ↑↓ confidences</text>
+<path class="co" d="M1002 230V300" marker-end="url(#arO)" marker-start="url(#arO)" stroke-dasharray="5 4"/>
+<text class="q" x="1012" y="262" style="fill:#c4521f">released Z</text>
+
+<!-- evaluation -->
+<text class="lane" x="24" y="482">EVALUATION (SAME FOR EVERY MECHANISM)</text>
+<g><rect x="24" y="494" width="1320" height="118" rx="8" fill="#f0efec" stroke="#8a8984" stroke-width="1.3"/>
+<text class="n" x="40" y="522">Utility</text>
+<text class="q" x="40" y="546">accuracy · precision · recall</text>
+<text class="q" x="40" y="566">F1 · ROC-AUC · train–test gap</text>
+<text class="n" x="330" y="522">Empirical privacy</text>
+<text class="q" x="330" y="546">attack AUC · advantage · TPR at 5%,</text>
+<text class="q" x="330" y="566">1%, 0.1% FPR · attribute + recon. leak</text>
+<text class="n" x="660" y="522">Formal privacy</text>
+<text class="q" x="660" y="546">(ε, δ) from the RDP accountant ·</text>
+<text class="q" x="660" y="566">cap e^ε/(1+e^ε) vs measured attacks</text>
+<text class="n" x="990" y="522">Statistics</text>
+<text class="q" x="990" y="546">10 seeds · 95% t-intervals ·</text>
+<text class="q" x="990" y="566">Wilcoxon paired tests · 13 unit tests</text></g>
+<g><rect x="1368" y="494" width="248" height="118" rx="8" fill="#fff" stroke="#0b0b0b" stroke-width="2"/>
+<text class="n" x="1384" y="522">Outcome</text>
+<text class="b" x="1384" y="548">privacy–utility comparison</text>
+<text class="b" x="1384" y="568">of 5 mechanisms and a</text>
+<text class="b" x="1384" y="588">recommended configuration</text></g>
+<path class="c" d="M1260 420V492" marker-end="url(#ar)"/>
+<path class="c" d="M1344 553H1366" marker-end="url(#ar)"/>
+</svg>
+</body></html>
